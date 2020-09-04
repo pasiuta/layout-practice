@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#introduction {
+  background: linear-gradient(#64b5f6, rgba(0, 0, 0, 0.8)), url("http://bit.ly/2fBj6OJ") 0% 0%/cover;
+}
+
+#info-3 {
+  background: linear-gradient(rgba(100, 181, 246, 0.3), rgba(0, 0, 0, 0.8)), url("http://bit.ly/2xMHeVk") 0% 0%/cover;
+}
+
+#feature-rundown img {
+  width: 120px;
+}
+
+/*-===== dev ===== */
+.debug {
+  border: 2px solid red;
+}
+
+/*============ Utility classes. 
+ Use swush for faster ease of development ============*/
+.fill-viewport {
+  min-height: 100vh;
+}
+
+.fill-40-viewport {
+  min-height: 40vh;
+}
+
+.fill-80-viewport {
+  min-height: 80vh;
+}
+
+.fill-90-viewport {
+  min-height: 90vh;
+}
+
+.jumbotron-transparent {
+  background-color: transparent;
+}
+
+.text-white-70 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text-black-70 {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.text-white-40 {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/*== 1. 
+  1. Borders along x an y
+  2. Borders with colors i.e the shades of white and gray above
+  3. Unordered list with borders all round
+  4. Unordered list with borders along y, as in pricing table here
+  5. Border size class*/
+.list-border-y li {
+  border-top: 1px solid;
+}
+
+.list-border-y li:last-child {
+  border-bottom: 1px solid;
+}
+
+.list-border-black-20 li,
+.list-border-black-20 li:last-child {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 768px) {
+  /*need to set flex-basis and have it dependent on size too
+  usage tip: if you want the element to NOT be positioned in the
+  center, add this class to a non `.container` div. Container divs in
+  bootstrap are styled to seat in the center of the page. 
+  */
+  .basis-md-50 {
+    flex-basis: 50%;
+  }
+}
