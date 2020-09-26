@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+
+body{
+   font-weight: 400;
+  font-family: "Lato", sans-serif;
+font-size: 14px;
+  color: #fff;
+}
+.container{
+  max-width: 1700px;
+  margin: 0 auto;
+  }
+.header__inner{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 93px;
+  } 
+  .logo{
+    padding-left: 265px;
+  }
+  .btn__menu {
+    margin-right:-50px;
+  width: 42px;
+  display: none;
+}
+.btn__menu div{
+  height: 5px;
+  background-color: #709dca;
+  margin-bottom:5px;
+
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list li {
+  padding-right: 40px;
+  margin: 6px;
+}
+.menu__list li a {
+  height: 11px;
+  font-size: 14px;
+ color: #868686;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+ .menu__list ul li a:first-child {
+  padding: 13px 20px;
+  background-color: #ffbb42;
+}
+
+.top {
+
+  height: 589px;
+ background-color: #709dca;
+  padding-top: 110px;
+display: flex;
+  
+}
+
+.top__inner {
+  
+
+}
+
+.top__info {
+
+  margin-right: 35px;
+  color: #fff;
+}
+
+.top-info__title {
+
+ color: #ffffff;
+font-family: "Open Sans";
+font-size: 35px;
+font-weight: 700;
+letter-spacing: -0.88px;
+text-transform: uppercase;
+text-align: center;
+padding-bottom: 10px;
+}
+.top-info__subtitle{
+font-family: "Open Sans Light";
+font-weight: 300;
+text-align: center;
+}
+.top-info__form{
+ 
+  padding-top: 33px;
+  padding-left: 130px;
+}
+.top-info__form-input {
+  display: flex;
+  margin: 5px;
+}
+
+.top-info__form-input input{
+ 
+padding: 5px 55.4px;
+  width: 100%;
+
+}
+/*.top-info__form-input::before {
+  content: "";
+ background-image: url("../img/icons/fullname.png");
+ width: 13px;
+  height: 15px;
+  }
+  */
+.btn{
+padding: 4px 75.1px;
+
+background-color: #ffbb42;
+color: #ffffff;
+font-family: "Open Sans";
+font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
+}
+.btn:hover{
+
+  background-color:#e1ff24;
+  transition: all 1.5s;
+}
+.top-info__slider{
+padding-top: 51px;
+width: 650px;
+       margin:0 auto;
+
+}
+.top-info__slider-image{
+}
+ .top-info__slider .slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.top-info__slider .slick-dots li {
+  margin: 0 8px;
+}
+
+.top-info__slider .slick-dots li.slick-active button {
+  background-color: #fff;
+  border: 2px solid #709dca;
+}
+.top-info__slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background-color: #709dca;
+}
+.action{
+
+}
+.title{
+padding-top: 210px;
+color: #394b50;
+font-family: Lato;
+font-size: 30px;
+font-weight: 700;
+letter-spacing: -0.75px;
+text-transform: uppercase;
+text-align: center;
+}
+.subtitle{
+  padding-top: 5px;
+font-family: "Lato Light";
+color: #394b50;
+font-weight: 300;
+text-align: center;
+}
+.action-steps{
+  max-width: 1093px;
+  margin: 0 auto;
+display: flex;
+padding-right: 40px;
+
+}
+.action-steps__img{
+padding-top: 97px;
+text-align: center;
+
+}
+
+.action-steps__title{
+padding-top: 63px;
+color: #394b50;
+font-family: Lato;
+font-size: 20px;
+font-weight: 700;
+line-height: 22px;
+
+
+}
+.action-steps__subtitle{
+  padding-top: 33px;
+color: #7b7b7b;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 22px;
+}
+.button{
+  padding-top: 133px;
+  padding-bottom: 307px;
+  text-align: center;
+}
+
+
+.action-button{
+
+  color: #ffffff;
+font-family: "Open Sans";
+font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
+  width: 165px;
+height: 46px;
+background-color: #ffbb42;
+}
+.action-button:hover{
+
+  background-color:#e1ff24; 
+   transition: all 1.5s;
+}
