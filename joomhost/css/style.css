@@ -265,7 +265,7 @@ body {
 
 .price__items {
   display: flex;
-  justify-content: space-between;
+
 }
 
 .price-item {
